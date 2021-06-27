@@ -76,9 +76,9 @@ class Events extends Component<AcceptedProps, LocationEventState>{
                     </tr>
                 </thead>
                 <tbody>
-                   {this.state.events.map((ticket)=>{
+                   {this.state.events.map((ticket, index)=>{
                        return(
-                           <tr>
+                           <tr key = {index}>
                                <td>{ticket.name}</td>
                                <td>{ticket.date}</td>
                                <td><a href={ticket.urlLink} target = "blank">Tickets</a></td>
