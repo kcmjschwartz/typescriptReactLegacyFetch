@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 type LocationEventState = {
     latitude: number,
     longitude: number
-    events: Array<{name: string, date:'', urlLink:string}>
+    events: Array<{name: string, date:string, urlLink:string}>
 }
 
 type  AcceptedProps= {
