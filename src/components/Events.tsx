@@ -47,7 +47,7 @@ class Events extends Component<AcceptedProps, LocationEventState>{
         .then(result => {
             let results = result._embedded.events
             
-            this.setState({events:results.map((eventObj: any)=>{
+            this.setState({events:results.map((eventObj: {name:string, dates:{start:{localDate:string}}, url:string})=>{
                 return(
                     {
                     name: eventObj.name,
